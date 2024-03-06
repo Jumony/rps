@@ -71,13 +71,17 @@ function playRound(playerSelection, computerSelection)
     }
 }
 
+
+
+const rockButton = document.querySelector('.rock-button')
+rockButton.addEventListener('click', () => { 
+    let computerSelection = getComputerChoice();
+    playRound('rock', computerSelection);
+});
+
 function playGame()
 {
-    for (let i = 0; i < 5; i++)
-    {
-        let playerSelection = prompt("Please enter rock paper or scissors")
-        let computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
-    }
-
+    let playerSelection = prompt("Please enter rock paper or scissors")
+    let computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
 }
