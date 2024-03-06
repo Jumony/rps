@@ -67,12 +67,8 @@ function playRound(playerSelection, computerSelection)
             {
                 return "Draw"
                 break;
-            }
-
-            
+            }       
     }
-
-
 }
 
 function playGame()
